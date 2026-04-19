@@ -80,3 +80,14 @@ export interface CreateBookingRequest {
   start_time: string
   notes?: string
 }
+
+export interface AvailableSlot {
+  start_time: string
+  end_time: string
+  staff_id: string
+  staff_name: string
+}
+
+export interface CustomerWithStats extends Customer {
+  total_bookings?: number
+}
